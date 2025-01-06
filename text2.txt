@@ -1,5 +1,24 @@
 GIT CHEATSHEET
+
+Basics
+Life cycle of file :- 
+untracked (new file or edited file)--> unmodified(will go to unmodified) ---> modified(if you change anything after commit it come in modified) --> staged (if you again do git add . it comes here)
+
+untracked -git add .-> staged -- git commit-> unmodified area - add anything-> Modified --git commit -> staged
+
+_____________________________ _____________________________
+
 git workflow :- 
-local --> staged -->git -->remote
+local(working directory) -git add .-> staging area(when you add the file) --> .git -->remote
+
+git commit create versions(snapshots) in .git repositories.
+
+____________________________________________________________
 
 for adding the files to staging area -- > git add .
+
+-m -- for meeage ... usage git commit -m "some message".
+
+
+
+
