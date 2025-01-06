@@ -1,0 +1,52 @@
+GIT CHEATSHEET
+
+Basics
+Life cycle of file :- 
+untracked (new file or edited file)--> unmodified(will go to unmodified) ---> modified(if you change anything after commit it come in modified) --> staged (if you again do git add . it comes here)
+
+untracked -git add .-> staged -- git commit-> unmodified area - add anything-> Modified --git commit -> staged
+
+_____________________________ _____________________________
+
+git workflow :- 
+local(working directory) -git add .-> staging area(when you add the file) --> .git -->remote
+
+git commit create versions(snapshots) in .git repositories.
+
+____________________________________________________________
+Configure Git for the Current Repository:
+git config user.name "New Author Name"
+git config user.email "new.author@example.com"
+git config -l --> To check the current configuration, use:
+
+
+Add and Commit :- 
+
+for adding the files to staging area -- > git add .
+-m -- for meeage ... usage git commit -m "some message".
+git -a -m "commit message" --> skiiping the staging area.
+
+
+Logs:- 
+git log --> give details of all the previous commits .
+git log --oneline
+
+Delete :-
+rm -rf .git (dont you will loose your local git)
+
+Difference :-
+git diff --> give you difference from current to staged area without adding.
+git diff --staged  --> staged that will go into the staged after adding to check.
+
+
+.gitignore file -->
+you can ignore the files , folder make entry in it .
+
+
+
+
+
+
+
+
+
