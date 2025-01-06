@@ -42,7 +42,9 @@ git diff --staged  --> staged that will go into the staged after adding to check
 .gitignore file -->
 you can ignore the files , folder make entry in it .
 
-
+Move and remove file in git .
+git rm filename.txt
+git mv filename.txt newfilename.txt
 
 
 
