@@ -1,2 +1,1 @@
-Hi this is text2
-Is updated one
+GIT CHEATSHEET
