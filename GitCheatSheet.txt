@@ -53,7 +53,39 @@ add file inside .gitignore
 git rm --cached filename  -- remove from traking
 
 Unstaging and unmodifying files
-git retore --stage filename.txt -- restore from staged area
+git retore --staged filename.txt -- restore from staged area to untracked
+git checkout --filename.txt -- you can go to previous version (rollback) or commit /dicard all changes in file
+git checkout -f rollback all the files to last commit or last version
+
+Alias set 
+git config --global alias.st(your alias) status(actual command)
+eg :- git config --global alias.unstage 'restore --staged --' --> git unstage file.txt
+
+Branching:-
+diverging fromt the main branch.
+lightwighth movable pointer.
+Why branching is required.
+
+Crete branches
+HEAD --> it is a pointer which shows the latest comment
+git branch -- to check current branch 
+git branch -v  branch and last commit
+
+
+git branch develop  -- to create branch
+*branchName is the current or active branch
+
+change to different branch
+git checkout branchname --> change the branch
+git chekout -b branchname --> create and move to branch immediately
+git log --oneline --graph --all --- show all branches in graph format 
+git log --oneline -- show all branches and logs
+
+Delete the branch
+git branch -d branchname
+git branch -D branchName --forcefull
+
+
 
 
 
