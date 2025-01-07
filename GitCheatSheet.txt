@@ -81,9 +81,9 @@ git chekout -b branchname --> create and move to branch immediately
 git log --oneline --graph --all --- show all branches in graph format 
 git log --oneline -- show all branches and logs
 
-
-
-
+Delete the branch
+git branch -d branchname
+git branch -D branchName --forcefull
 
 
 
