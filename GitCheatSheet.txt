@@ -78,6 +78,8 @@ git branch develop  -- to create branch
 change to different branch
 git checkout branchname --> change the branch
 git chekout -b branchname --> create and move to branch immediately
+git log --oneline --graph --all --- show all branches in graph format 
+git log --oneline -- show all branches and logs
 
 
 
