@@ -43,8 +43,21 @@ git diff --staged  --> staged that will go into the staged after adding to check
 you can ignore the files , folder make entry in it .
 
 Move and remove file in git .
-git rm filename.txt
+git rm filename.txt 
+forcefully remove git rm -f filename.txt
 git mv filename.txt newfilename.txt
+
+
+Untracking file
+add file inside .gitignore
+git rm --cached filename  -- remove from traking
+
+Unstaging and unmodifying files
+git retore --stage filename.txt -- restore from staged area
+
+
+
+
 
 
 
