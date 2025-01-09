@@ -88,8 +88,13 @@ git branch -D branchName --forcefull
 Merge the branch 
 git merge branchname --> first go to the branch where you want to merge and use the command
 
+3way merging
+* you have one common ancestor and both branches will get meged after that .
 
+merge conflict 
+resolve the conflict and then add the file and commit it 
 
+Rebasing**
 
 
 
