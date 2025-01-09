@@ -85,6 +85,9 @@ Delete the branch
 git branch -d branchname
 git branch -D branchName --forcefull
 
+Merge the branch 
+git merge branchname --> first go to the branch where you want to merge and use the command
+
 
 
 
