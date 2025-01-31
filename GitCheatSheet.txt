@@ -53,7 +53,7 @@ add file inside .gitignore
 git rm --cached filename  -- remove from traking
 
 Unstaging and unmodifying files
-git retore --staged filename.txt -- restore from staged area to untracked
+git restore --staged filename.txt -- restore from staged area to untracked
 git checkout --filename.txt -- you can go to previous version (rollback) or commit /dicard all changes in file
 git checkout -f rollback all the files to last commit or last version
 
@@ -66,7 +66,7 @@ diverging fromt the main branch.
 lightwighth movable pointer.
 Why branching is required.
 
-Crete branches
+Create branches
 HEAD --> it is a pointer which shows the latest comment
 git branch -- to check current branch 
 git branch -v  branch and last commit
@@ -95,6 +95,11 @@ merge conflict
 resolve the conflict and then add the file and commit it 
 
 Rebasing**
+rebasing means deleting the commits from other branch and putting it at the end .
+
+for this you need to go to the branch from where you need to do the rebase to branch on which you need to do the rebase.
+Eg:- git checkout experiment
+git rebase develop
 
 
 
