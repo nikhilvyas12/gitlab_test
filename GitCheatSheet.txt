@@ -100,8 +100,19 @@ rebasing means deleting the commits from other branch and putting it at the end 
 for this you need to go to the branch from where you need to do the rebase to branch on which you need to do the rebase.
 Eg:- git checkout experiment
 git rebase develop
+advantages of rebasing 
+rebasing makes the log history looks linear and clearer , mainly use it in opensource projects
+** when not using rebasing
+do not rebase commits that exists outside your repository and that people may have based work on .
+because when you rebase stuff you are abandoning existing commits and creating new ones that are similar but different
+if some other collaborator working with you and created an branch based on the commit of one of your change , dont rebase
 
+Merge Vs rebase
+commit history is a record of what actually happened  or story of how your project was made
 
+Merge -- keeps records of all the thing
+
+rebase -- clear commits looks linears . only rebase in local branches dont do it in remote.
 
 
 
