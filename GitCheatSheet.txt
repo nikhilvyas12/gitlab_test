@@ -112,12 +112,19 @@ commit history is a record of what actually happened  or story of how your proje
 
 Merge -- keeps records of all the thing
 
-rebase -- clear commits looks linears . only rebase in local branches dont do it in remote.
+rebase -- clear commits looks linears .  **only rebase in local branches dont do it in remote.
 
+GIT
+for creating and pushing the new and existing project follow github 
 
+git pull --to pull the updates from remote
+git push -- to push to remote
+git remote -- to check the remote 
+git remote -v -- > to check the remote pull and fetch 
 
+origin is the github url --> https://github.com/yourrepo.git
+git push -U(upstream) origin master --git push -U origin master
 
-
-
+git remote add my-remote https://github.com/yourrepo.git
 
 
