@@ -127,4 +127,77 @@ git push -U(upstream) origin master --git push -U origin master
 
 git remote add my-remote https://github.com/yourrepo.git
 
+Clone :- 
+Git clone repository(https)
+
+PushlocalcodetoGit
+git remote add origin https://github.com/nikhilvyas12/sprintbootsamplearch.git
+git branch -M master
+git push -u origin master
+
+
+Git fetch
+if we use git fetch it just fetch from the remote to that local git and not in local git repo after using it you need to use git merge to get the updated
+code /data into your working directory
+
+Git Pull = git fetch +git merge
+it does both jobs using single command git pull and git merge automatically 
+
+Forking :-
+if you want to provide open contribution you can fork any other repository work on it and provide the Pull request or merge request to owner 
+
+Github Issues 
+you can raise the issues and label them in github in open contributions .
+
+Upstream
+upstream is the repository of the owner and maintainer .
+you can just fetch from the upstream branch (forked repository)
+
+GIthub Pages
+you can host static website or only frontend website using github pages.
+
+shot the commits 
+git show commitID
+
+Stashing
+you can save your progress using stashing before switching to other repository , stash works in a stack so we can go to perticualr stash using array
+git stash 
+
+git stash apply stash@{0} -- apply perticualr stash
+
+git statsh drop statsh@{0} --  it drop the stash 
+
+git stash clear -- clears all at once
+
+Git statsh list -- yo can list the stashes
+
+
+Deleate all changes (clean )
+git clean -f -d  -- forcefully deleteing all directory and subdirectory used when you have done lot of changes 
+
+Changing Commit message 
+git commit --amend    --> you can make changes in last latest commit using this , it will open the vim editor after changing you can do th write and quit . esc+:+wq
+
+changing commit content
+make changes in the workng directory 
+add files to the staging area
+run the aamend command  --> git commit --amend
+
+Rewriting history
+travel to any commit in past -- git checkout commitID
+
+if you want to create an branch using old commits - git switch -c {newBranchName}
+
+git switch -   --> comeback to the head or same point .
+
+if you want to come to the master or other branch from the old just use checkout -- git checkout master
+
+Revert Commit (Dangeroud command)
+you can undo the change
+
+
+
+
+
+
 
