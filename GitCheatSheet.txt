@@ -192,8 +192,19 @@ git switch -   --> comeback to the head or same point .
 
 if you want to come to the master or other branch from the old just use checkout -- git checkout master
 
-Revert Commit (Dangeroud command)
-you can undo the change
+
+(Dangerous commands)
+Revert Commit 
+you can undo the change you have done for perticular commit with commit ID 
+to check the changes :- git show {CommitID}
+command :- git rever {CommitID}
+
+Reset Command
+delete all the commit from the given commit ID onwards
+
+git reset --soft commitID
+git reset -hard ommitid
+
 
 
 
