@@ -202,9 +202,13 @@ command :- git rever {CommitID}
 Reset Command
 delete all the commit from the given commit ID onwards
 
-git reset --soft commitID
-git reset -hard ommitid
+git reset --soft commitID it is default flag you can just use it like  :- git reset commitID -- it give you the second chance it ask you by putting the updated files in uncommits 
+git clean -f -d
 
+git reset -hard commitid  -- it deletes the  commiti, it is mostly use to delete the recent commits .
+
+
+git cherry-pick commitID  -- one 1 commit and put it on another command , take the changes from specific comit and put on the branch .
 
 
 
