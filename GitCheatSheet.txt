@@ -24,7 +24,7 @@ Add and Commit :-
 
 for adding the files to staging area -- > git add .
 -m -- for meeage ... usage git commit -m "some message".
-git -a -m "commit message" --> skiiping the staging area.
+git -a -m "commit message" --> skiiping the staging area. or git -am "your message"
 
 
 Logs:- 
@@ -49,7 +49,7 @@ git mv filename.txt newfilename.txt
 
 
 Untracking file
-add file inside .gitignore
+add any file inside .gitignore
 git rm --cached filename  -- remove from traking
 
 Unstaging and unmodifying files
