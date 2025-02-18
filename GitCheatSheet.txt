@@ -77,7 +77,7 @@ git branch develop  -- to create branch
 
 change to different branch
 git checkout branchname --> change the branch
-git chekout -b branchname --> create and move to branch immediately
+git checkout -b branchname --> create and move to branch immediately
 git log --oneline --graph --all --- show all branches in graph format 
 git log --oneline -- show all branches and logs
 
@@ -123,7 +123,7 @@ git remote -- to check the remote
 git remote -v -- > to check the remote pull and fetch 
 
 origin is the github url --> https://github.com/yourrepo.git
-git push -U(upstream) origin master --git push -U origin master
+git push -u(upstream) origin master --git push -U origin master
 
 git remote add my-remote https://github.com/yourrepo.git
 
