@@ -81,6 +81,29 @@ git checkout -b branchname --> create and move to branch immediately
 git log --oneline --graph --all --- show all branches in graph format 
 git log --oneline -- show all branches and logs
 
+
+in case when you have cloned the repository and you wanted to switch to another branch then default of the available remote branches which you can able to see using gti branch -a please use below .
+
+to switch to remote branch as a local branch, you need to create a local tracking branch for it. Here's how:
+syntax :- git checkout -b local-name origin/remote-name
+
+eg:-
+git checkout -b secret_removal origin/secret_removal
+This does two things:
+
+Creates a local branch called secret_removal
+Sets it to track the remote branch origin/secret_removal
+So now you’re on a proper local branch, and you can safely commit, push, etc.
+
+
+Shortcut (since Git 2.23+)
+git switch -c secret_removal --track origin/secret_removal
+
+Or if Git is able to figure it out automatically:
+git switch secret_removal
+
+
+
 Delete the branch
 git branch -d branchname
 git branch -D branchName --forcefull
