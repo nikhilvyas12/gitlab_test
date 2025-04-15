@@ -234,6 +234,11 @@ git reset -hard commitid  -- it deletes the  commiti, it is mostly use to delete
 git cherry-pick commitID  -- one 1 commit and put it on another command , take the changes from specific comit and put on the branch .
 
 
+check configuration
+git config --list
+
+
+
 
 
 
