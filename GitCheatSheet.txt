@@ -244,11 +244,3 @@ for eg :- if you have a as base commit and top of that you have done some commit
 git revert acommitID .
 
 syntax:- git revert 9c3dea75
-
-
-
-
-
-
-
-
