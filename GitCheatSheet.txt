@@ -244,3 +244,10 @@ for eg :- if you have a as base commit and top of that you have done some commit
 git revert acommitID .
 
 syntax:- git revert 9c3dea75
+
+Say you want to revert both:
+a1b2c3d Add logout feature
+e3f4g5h Update UI styling
+🧭 Step 1: Run range revert
+git revert e3f4g5h^..a1b2c3d
+Note: Commits are reverted in the order they appear (oldest to newest). That’s why the range starts from e3f4g5h^.
