@@ -82,7 +82,7 @@ git log --oneline --graph --all --- show all branches in graph format
 git log --oneline -- show all branches and logs
 
 
-in case when you have cloned the repository and you wanted to switch to another branch then default of the available remote branches which you can able to see using gti branch -a please use below .
+in case when you have cloned the repository and you wanted to switch to another branch then default of the available remote branches which you can able to see using git branch -a please use below .
 
 to switch to remote branch as a local branch, you need to create a local tracking branch for it. Here's how:
 syntax :- git checkout -b local-name origin/remote-name
@@ -153,10 +153,12 @@ git remote add my-remote https://github.com/yourrepo.git
 Clone :- 
 Git clone repository(https)
 
-PushlocalcodetoGit
-git remote add origin https://github.com/nikhilvyas12/sprintbootsamplearch.git
-git branch -M master
-git push -u origin master
+PushlocalcodetoGit (add local branch to tracking branch)
+git remote add origin https://github.com/nikhilvyas12/sprintbootsamplearch.git -- it will add origin which you can see using git remote -v .
+
+git branch -M master here you are creating the branch
+
+git push -u origin master. -- this command specifically add your local branch to remote tracking
 
 
 Git fetch
@@ -236,6 +238,12 @@ git cherry-pick commitID  -- one 1 commit and put it on another command , take t
 
 check configuration
 git config --list
+
+Git revert -- if you want to revert to some specific commit you can use this command it is an no nonsense command 
+for eg :- if you have a as base commit and top of that you have done some commit b and c , but now you need to come to a again due to some reason , you just need to use the commit id of the commit a in this command
+git revert acommitID .
+
+syntax:- git revert 9c3dea75
 
 
 
