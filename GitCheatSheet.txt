@@ -251,3 +251,7 @@ e3f4g5h Update UI styling
 🧭 Step 1: Run range revert
 git revert e3f4g5h^..a1b2c3d
 Note: Commits are reverted in the order they appear (oldest to newest). That’s why the range starts from e3f4g5h^.
+
+
+allow Empty commit
+ git commit --allow-empty -m "Trigger Build"
